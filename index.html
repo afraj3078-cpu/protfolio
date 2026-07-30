@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="PG1EaoIWQscj8S3oUBeT5iNslciQvos9Ugwg-JIHl7Y" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,14 +10,12 @@
 <meta name="keywords" content="Afra Makeup Artist, Makeup Artist in Melapalayam, Bridal Makeup Artist Melapalayam, Bridal Makeup Artist Tamil Nadu, Party Makeup Artist Melapalayam, HD Makeup Artist Tamil Nadu, Engagement Makeup Artist Melapalayam, Best Makeup Artist Melapalayam">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Afra Makeup Artist">
-<link rel="canonical" href="https://afraj3078-cpu.github.io/protfolio/">
+<link rel="canonical" href="https://afra-makeup-artist.example.com/">
 
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="Afra Makeup Artist | Bridal & Party Makeup in Melapalayam">
 <meta property="og:description" content="Soft-glam bridal, party and HD makeup in Melapalayam, Tamil Nadu. Book a personalised look with Afra.">
 <meta property="og:locale" content="en_IN">
-<meta property="og:url" content="https://afraj3078-cpu.github.io/protfolio/">
-<meta property="og:image" content="https://afraj3078-cpu.github.io/protfolio/beautiful%20indian%20bride%20%F0%9F%91%B0.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +77,8 @@
   .brand{ font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:600; color:var(--rose-deep); }
   .brand span{ color:var(--gold); }
   .nav-links{ display:flex; gap:32px; font-size:14.5px; letter-spacing:0.02em; }
-  .nav-links a{ position:relative; padding-bottom:4px; transition:color .2s; }
+  .nav-links a{ position:relative; padding-bottom:4px; transition:color .3s; }
+  .nav-links a.active{ color:var(--rose-deep); font-weight: 500; } /* Active link style */
   .nav-links a:hover{ color:var(--rose-deep); }
   .nav-cta{
     background:var(--rose-deep); color:var(--white); padding:10px 22px;
@@ -235,8 +233,10 @@
   .test-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
   .test-card{
     background:var(--white); border-radius:18px; padding:30px 26px;
-    box-shadow:0 16px 34px -20px rgba(178,58,99,0.25);
+    box-shadow:0 12px 28px -16px rgba(178,58,99,0.2); border: 1px solid var(--pink-pale);
+    transition:transform .3s, box-shadow .3s;
   }
+  .test-card:hover{ transform: translateY(-6px); box-shadow:0 20px 35px -15px rgba(178,58,99,0.28); }
   .test-card p{ font-size:15px; line-height:1.75; color:#5d4a54; font-style:italic; }
   .test-card .who{ margin-top:18px; display:flex; align-items:center; gap:10px; }
   .test-card .who .avatar{
@@ -248,28 +248,28 @@
   .test-card .who span{ font-size:12px; color:#8a7580; }
 
   /* ===== CONTACT / BOOK ===== */
-  .contact{
+  .contact-section{ /* Renamed to avoid ID conflict if we keep a preview */
     background:linear-gradient(135deg, var(--rose-deep), #8f2c4d);
     color:var(--white); border-radius:28px; margin:0 24px 0;
     padding:64px 48px;
   }
   .contact-inner{ max-width:1072px; margin:0 auto; display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center; }
-  .contact h2{ font-size:36px; color:var(--white); }
-  .contact p{ margin-top:14px; font-size:15.5px; line-height:1.75; color:#f5d9e2; max-width:420px; }
-  .contact-details{ margin-top:26px; display:grid; gap:12px; font-size:14.5px; }
-  .contact-details div{ display:flex; gap:10px; align-items:center; color:#ffe6ee; }
+  .contact-section h2{ font-size:36px; color:var(--white); }
+  .contact-section p{ margin-top:14px; font-size:15.5px; line-height:1.75; color:#f5d9e2; max-width:420px; }
+  .contact-section .contact-details{ margin-top:26px; display:grid; gap:12px; font-size:14.5px; }
+  .contact-section .contact-details div{ display:flex; gap:10px; align-items:center; color:#ffe6ee; }
 
   form.book-form{ background:var(--white); border-radius:18px; padding:30px; color:var(--plum-ink); }
   form.book-form h3{ font-size:20px; margin-bottom:16px; }
   form.book-form label{ font-size:12.5px; color:#8a7580; letter-spacing:0.03em; display:block; margin-bottom:6px; margin-top:14px; }
   form.book-form input, form.book-form select, form.book-form textarea{
     width:100%; padding:11px 14px; border:1px solid var(--pink-soft); border-radius:10px;
-    font-family:'Jost',sans-serif; font-size:14px; color:var(--plum-ink); outline:none;
-    transition:border-color .2s;
+    font-family:'Jost',sans-serif; font-size:14.5px; color:var(--plum-ink); outline:none; 
+    transition:border-color .2s, box-shadow .2s;
   }
-  form.book-form input:focus, form.book-form select:focus, form.book-form textarea:focus{ border-color:var(--rose-deep); }
+  form.book-form input:focus, form.book-form select:focus, form.book-form textarea:focus{ border-color:var(--rose-deep); box-shadow: 0 0 0 3px var(--pink-soft); }
   form.book-form button{
-    margin-top:20px; width:100%; padding:13px; background:var(--rose-deep); color:var(--white);
+    margin-top:24px; width:100%; padding:14px; background:var(--rose-deep); color:var(--white); 
     border:none; border-radius:10px; font-size:14.5px; letter-spacing:0.03em; cursor:pointer;
     transition:background .2s;
   }
@@ -285,16 +285,27 @@
     .nav-toggle{ display:block; }
 
     .hero-grid, .about-grid, .contact-inner{ grid-template-columns:1fr; }
-    .hero h1{ font-size:40px; }
+    .hero h1{ font-size:42px; }
     .skills-grid{ grid-template-columns:1fr 1fr; }
     .gallery-grid{ grid-template-columns:repeat(2,1fr); }
     .g-wide{ grid-column:span 2; }
     .test-grid{ grid-template-columns:1fr; }
-    .hero-photo{ margin-top:24px; }
-    .contact{ padding:44px 26px; border-radius:20px; }
+    .hero-photo{ margin-top:32px; }
+    .about-grid{ gap: 32px; }
+    .about-text h2{ font-size: 32px; }
+    .contact-section{ padding:48px 32px; border-radius:20px; margin: 0 16px; }
+    .contact-inner{ gap: 40px; }
+    .contact-section h2{ font-size: 32px; }
   }
 
   @media (max-width: 500px){
+    .container{ padding: 0 20px; }
+    .hero{ padding: 64px 0 48px; }
+    .hero h1{ font-size: 36px; }
+    .hero-photo .float-card{ position: relative; bottom: auto; left: auto; margin-top: 16px; box-shadow: none; }
+    .hero-actions{ justify-content: center; }
+    .hero-badges{ justify-content: center; gap: 20px; }
+    section{ padding: 80px 0; }
     .skills-grid{ grid-template-columns: 1fr; }
     .gallery-grid{ grid-template-columns: 1fr; grid-auto-rows: 250px; }
   }
@@ -305,22 +316,23 @@
 <!-- ============ NAV ============ -->
 <nav>
   <div class="nav-inner">
-    <a href="#top" class="brand">Afra<span>.</span></a>
+    <a href="index.html" class="brand">Afra<span>.</span></a>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#reviews">Reviews</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
     </div>
-    <a href="#book" class="nav-cta">Book Now</a>
+    <a href="contact.html" class="nav-cta">Book Now</a>
     <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     <!-- Mobile Menu -->
     <div class="nav-menu-mobile">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#book" class="nav-cta">Book Now</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html" class="nav-cta">Book Now</a>
     </div>
   </div>
 </nav>
@@ -333,8 +345,8 @@
       <h1>Soft glam, done <em>gently</em>,<br>for every kind of day.</h1>
       <p class="lede">I'm Afra — a makeup artist based in Melapalayam. I work across bridal, party, engagement and everyday looks, and I care most about getting a shade and finish that actually suits your skin, not just what's trending.</p>
       <div class="hero-actions">
-        <a href="#book" class="btn-primary">Book a Look</a>
-        <a href="#gallery" class="btn-ghost">See My Work</a>
+        <a href="contact.html" class="btn-primary">Book a Look</a>
+        <a href="gallery.html" class="btn-ghost">See My Work</a>
       </div>
       <div class="hero-badges">
         <div class="hero-badge"><b>1 yr</b><span>Hands-on experience</span></div>
@@ -354,87 +366,23 @@
   </div>
 </header>
 
-<!-- ============ ABOUT ============ -->
-<section class="about" id="about">
-  <div class="container about-grid">
-    <div class="about-photo">
-      <img src="./ChatGPT Image Jul 29, 2026, 02_12_11 PM.png" alt="Afra, Makeup Artist based in Melapalayam, Tamil Nadu">
-    </div>
-    <div class="about-text">
-      <p class="eyebrow">About Afra</p>
-      <h2 style="font-size:34px; margin-top:10px;">A year in, and still obsessed with getting the details right</h2>
-      <p>I started out doing makeup for family functions and close friends in Melapalayam, and one year later it's grown into full bridal bookings, engagement looks and party makeup across Tamil Nadu. I'm still early in my journey, which is exactly why I spend so much time on the basics that most people rush past — skin prep, colour matching, and making sure the look holds up in photos, not just in the mirror.</p>
-      <p>Every face is different, so I don't work off one fixed "signature look." I ask what you're comfortable with, look at your outfit and the lighting of your event, and build the makeup around that — never the other way around.</p>
-      <ul class="about-list">
-        <li>Skin prep &amp; long-wear base, matched to your actual skin tone</li>
-        <li>Bridal, engagement, reception &amp; party makeup</li>
-        <li>HD and airbrush-friendly finishes for photography</li>
-        <li>Hygienic tools and skin-friendly, tested products</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SKILLS ============ -->
-<section class="skills" id="skills">
+<!-- ============ SERVICES PREVIEW ============ -->
+<section class="skills" id="services">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">What I Do</p>
-      <h2>Makeup skills &amp; specialisations</h2>
+      <h2>Makeup Services &amp; Specialisations</h2>
     </div>
     <div class="skills-grid">
-      <div class="skill-card">
-        <span class="num">01</span>
-        <h3>Bridal Makeup</h3>
-        <p>Long-wear, camera-ready bridal looks for the wedding day — muhurtham, reception and every function in between.</p>
-      </div>
-      <div class="skill-card">
-        <span class="num">02</span>
-        <h3>Engagement &amp; Reception</h3>
-        <p>Softer, event-specific looks built around your outfit, jewellery and the venue's lighting.</p>
-      </div>
-      <div class="skill-card">
-        <span class="num">03</span>
-        <h3>Party &amp; Occasion Makeup</h3>
-        <p>Birthdays, get-togethers and celebrations — a polished look that photographs well and lasts the evening.</p>
-      </div>
-      <div class="skill-card">
-        <span class="num">04</span>
-        <h3>HD &amp; Airbrush Finish</h3>
-        <p>Lightweight, high-definition coverage that holds up under studio lights and flash photography.</p>
-      </div>
-      <div class="skill-card">
-        <span class="num">05</span>
-        <h3>Everyday &amp; Casual Glam</h3>
-        <p>Natural, low-maintenance makeup for daily wear, office days or a quick touch-up look.</p>
-      </div>
-      <div class="skill-card">
-        <span class="num">06</span>
-        <h3>Skin-first Application</h3>
-        <p>Patch-tested, breathable products and clean tools — makeup that respects your skin, not just the finish.</p>
-      </div>
+      <div class="skill-card"><span class="num">01</span><h3>Bridal Makeup</h3><p>Long-wear, camera-ready bridal looks for the wedding day — muhurtham, reception and every function in between.</p></div>
+      <div class="skill-card"><span class="num">02</span><h3>Engagement &amp; Reception</h3><p>Softer, event-specific looks built around your outfit, jewellery and the venue's lighting.</p></div>
+      <div class="skill-card"><span class="num">03</span><h3>Party &amp; Occasion Makeup</h3><p>Birthdays, get-togethers and celebrations — a polished look that photographs well and lasts the evening.</p></div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="services.html" class="btn-ghost">View All Services</a>
     </div>
   </div>
 </section>
-
-<!-- ============ GALLERY ============ -->
-<section class="gallery" id="gallery">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Portfolio</p>
-      <h2>A few looks I've worked on</h2>
-    </div>
-    <div class="gallery-grid">
-      <a href="#" class="g-tall"><img src="./download (25).jpg" alt="Bridal makeup portfolio work by Afra"></a>
-      <a href="#"><img src="./Pink Glitter Eye Makeup ✨ Soft Glam Sparkly Eyes Look.jpg" alt="Eye makeup detail by Afra Makeup Artist"></a>
-      <a href="#" class="g-wide"><img src="./20 Nail Ideas In Pink.jpg" alt="Wedding day makeup look Melapalayam"></a>
-      <a href="#"><img src="./Navy blue 💙 charm ✨.jpg" alt="Party makeup finishing touch"></a>
-      <a href="#"><img src="./A Timeless Wedding Moment_ Love in Every Detail.jpg" alt="Professional makeup brushes and tools"></a>
-      <a href="#" class="g-tall"><img src="./Pakistani Soft Glam Makeup 2026.jpg" alt="Engagement makeup look by Afra"></a>
-    </div>
-  </div>
-</section>
-
 <!-- ============ TESTIMONIALS ============ -->
 <section class="testimonials" id="reviews">
   <div class="container">
@@ -459,46 +407,15 @@
   </div>
 </section>
 
-<!-- ============ CONTACT / BOOK ============ -->
-<section id="book">
-  <div class="contact">
-    <div class="contact-inner">
-      <div>
-        <p class="eyebrow" style="color:#ffd7e4;">Get In Touch</p>
-        <h2>Let's plan your look</h2>
-        <p>Based in Melapalayam, Tamil Nadu, and open to bookings across the district. Share your event date and I'll get back to you with availability and package details.</p>
-        <div class="contact-details">
-          <div>📍 Melapalayam, Tamil Nadu</div>
-          <div>📞 +91 8595859509</div>
-          <div>✉️afra45@gmail.com</div>
-        </div>
-      </div>
-      <form class="book-form" onsubmit="event.preventDefault(); alert('Thanks! Your enquiry has been noted — Afra will get back to you shortly.');">
-        <h3>Request a Booking</h3>
-        <label for="name">Your Name</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-        <label for="phone">Phone Number</label>
-        <input id="phone" type="tel" placeholder="Enter your phone number" required>
-        <label for="occasion">Occasion</label>
-        <select id="occasion">
-          <option>Bridal</option>
-          <option>Engagement</option>
-          <option>Reception</option>
-          <option>Party / Occasion</option>
-          <option>Other</option>
-        </select>
-        <label for="date">Event Date</label>
-        <input id="date" type="date">
-        <label for="msg">Message</label>
-        <textarea id="msg" rows="3" placeholder="Tell me a bit about the look you have in mind"></textarea>
-        <button type="submit">Send Enquiry</button>
-      </form>
-    </div>
-  </div>
-</section>
-
 <footer>
-  <p>&copy; <span id="year"></span> Afra Makeup Artist — Melapalayam, Tamil Nadu. All rights reserved.</p>
+  <p>&copy; <span id="year"></span> Afra Makeup Artist — Melapalayam, Tamil Nadu. All rights reserved. <br>
+    <a href="index.html">Home</a> | 
+    <a href="about.html">About</a> | 
+    <a href="services.html">Services</a> | 
+    <a href="gallery.html">Gallery</a> | 
+    <a href="reviews.html">Reviews</a> | 
+    <a href="contact.html">Contact</a>
+  </p>
 </footer>
 
 <script>
@@ -515,7 +432,7 @@ navToggle.addEventListener('click', () => {
 
 // Close mobile menu when a link is clicked
 mobileNavLinks.forEach(link => {
-  link.addEventListener('click', () => mobileNav.classList.remove('open'));
+  // No need to close menu on click for a multi-page site, as the page will reload.
 });
 
 // --- Sparkle Effect on Hero Section ---
@@ -539,6 +456,7 @@ heroSection.addEventListener('mousemove', (e) => {
     sparkle.remove();
   }, 800); // Matches the animation duration
 });
+
 </script>
 
 <!-- ============ STRUCTURED DATA (LocalBusiness) ============ -->
