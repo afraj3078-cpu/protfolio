@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ ON-PAGE SEO ============ -->
+<title>Services | Bridal, Party & HD Makeup | Afra Makeup Artist</title>
+<meta name="description" content="Explore the makeup services offered by Afra in Melapalayam, including bridal, engagement, party, HD makeup, and skin-first application techniques.">
+<meta name="keywords" content="makeup services Melapalayam, bridal makeup packages, party makeup artist, HD makeup finish, engagement makeup looks">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Afra Makeup Artist">
+<link rel="canonical" href="https://afra-makeup-artist.example.com/services.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Services | Bridal, Party & HD Makeup | Afra Makeup Artist">
+<meta property="og:description" content="Explore the makeup services offered by Afra in Melapalayam, including bridal, engagement, and party makeup.">
+<meta property="og:locale" content="en_IN">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --pink-pale:   #fdf1f4;
+    --pink-soft:   #f7d3de;
+    --pink-mid:    #ec9ec4ff;
+    --rose-deep:   #b23a63;
+    --plum-ink:    #3a2430;
+    --white:       #ffffff;
+    --gold:        #cda15a;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Jost', sans-serif;
+    color:var(--plum-ink);
+    background:var(--white);
+    overflow-x:hidden;
+  }
+  h1,h2,h3, .display{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    letter-spacing:0.01em;
+  }
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1120px; margin:0 auto; padding:0 24px; }
+  .eyebrow{
+    font-family:'Jost',sans-serif;
+    font-size:12.5px;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--rose-deep);
+    font-weight:500;
+  }
+
+  /* ===== NAV ===== */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--pink-soft);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px; max-width:1120px; margin:0 auto;
+  }
+  .brand{ font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:600; color:var(--rose-deep); }
+  .brand span{ color:var(--gold); }
+  .nav-links{ display:flex; gap:32px; font-size:14.5px; letter-spacing:0.02em; }
+  .nav-links a{ position:relative; padding-bottom:4px; transition:color .3s; }
+  .nav-links a:hover{ color:var(--rose-deep); }
+  .nav-links a.active{ color:var(--rose-deep); font-weight: 500; } /* Active link style */
+  .nav-cta{
+    background:var(--rose-deep); color:var(--white); padding:10px 22px;
+    border-radius:999px; font-size:13.5px; letter-spacing:0.03em; font-weight:500;
+    transition:background .2s;
+  }
+  .nav-cta:hover{ background:var(--plum-ink); }
+  .nav-toggle{ display:none; background:none; border:none; font-size:26px; color:var(--rose-deep); cursor:pointer; }
+
+  /* Mobile Nav Menu (hidden by default) */
+  .nav-menu-mobile{
+    display:none;
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--white);
+    border-bottom:1px solid var(--pink-soft);
+    padding:10px 32px 24px;
+    flex-direction:column;
+    gap:18px;
+    text-align:center;
+    box-shadow:0 10px 20px -10px rgba(178,58,99,0.1);
+  }
+  .nav-menu-mobile.open{ display:flex; }
+  .nav-menu-mobile a{ font-size:15px; font-weight:500; }
+  .nav-menu-mobile .nav-cta{ margin-top:8px; }
+
+  /* ===== PAGE HEADER ===== */
+  .page-header {
+    padding: 64px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--pink-pale) 0%, var(--white) 100%);
+  }
+  .page-header h1 {
+    font-size: 48px;
+  }
+
+  /* ===== SECTION SHELL ===== */
+  section{ padding:96px 0; }
+
+  /* ===== SKILLS ===== */
+  .skills{ background:var(--white); padding-top: 0; }
+  .skills .container{ perspective:1000px; }
+  .skills-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:24px;
+  }
+  .skill-card{
+    background:var(--white); border-radius:18px; padding:32px 26px;
+    border:1px solid var(--pink-soft);
+    transition:transform 0.4s, box-shadow 0.4s;
+  }
+  .skill-card:hover{ transform:translateY(-8px) rotateX(5deg); box-shadow:0 24px 45px -15px rgba(178,58,99,0.3); }
+  .skill-card .num{ font-family:'Cormorant Garamond',serif; font-size:15px; color:var(--gold); letter-spacing:0.08em; }
+  .skill-card h3{ font-size:22px; margin-top:8px; }
+  .skill-card p{ margin-top:10px; font-size:14.5px; line-height:1.7; color:#7a6672; }
+
+  footer{ padding:36px 24px; text-align:center; font-size:13px; color:#9a8790; }
+  footer a{ color:var(--rose-deep); }
+
+  @media (max-width:860px){
+    .nav-inner{ padding:16px 24px; }
+    .nav-links{ display:none; }
+    .nav-cta{ display:none; }
+    .nav-toggle{ display:block; }
+    .skills-grid{ grid-template-columns:1fr 1fr; }
+  }
+
+  @media (max-width: 500px){
+    .container{ padding: 0 20px; }
+    section{ padding: 80px 0; }
+    .page-header { padding: 48px 0; }
+    .page-header h1 { font-size: 38px; }
+    .skills-grid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Afra<span>.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Book Now</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <!-- Mobile Menu -->
+    <div class="nav-menu-mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PAGE HEADER ============ -->
+<header class="page-header">
+    <div class="container">
+        <p class="eyebrow">What I Do</p>
+        <h1>Services & Specialisations</h1>
+    </div>
+</header>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="num">01</span>
+        <h3>Bridal Makeup</h3>
+        <p>Long-wear, camera-ready bridal looks for the wedding day — muhurtham, reception and every function in between.</p>
+      </div>
+      <div class="skill-card">
+        <span class="num">02</span>
+        <h3>Engagement &amp; Reception</h3>
+        <p>Softer, event-specific looks built around your outfit, jewellery and the venue's lighting.</p>
+      </div>
+      <div class="skill-card">
+        <span class="num">03</span>
+        <h3>Party &amp; Occasion Makeup</h3>
+        <p>Birthdays, get-togethers and celebrations — a polished look that photographs well and lasts the evening.</p>
+      </div>
+      <div class="skill-card">
+        <span class="num">04</span>
+        <h3>HD &amp; Airbrush Finish</h3>
+        <p>Lightweight, high-definition coverage that holds up under studio lights and flash photography.</p>
+      </div>
+      <div class="skill-card">
+        <span class="num">05</span>
+        <h3>Everyday &amp; Casual Glam</h3>
+        <p>Natural, low-maintenance makeup for daily wear, office days or a quick touch-up look.</p>
+      </div>
+      <div class="skill-card">
+        <span class="num">06</span>
+        <h3>Skin-first Application</h3>
+        <p>Patch-tested, breathable products and clean tools — makeup that respects your skin, not just the finish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Afra Makeup Artist — Melapalayam, Tamil Nadu. All rights reserved. <br>
+    <a href="index.html">Home</a> | 
+    <a href="about.html">About</a> | 
+    <a href="services.html">Services</a> | 
+    <a href="gallery.html">Gallery</a> | 
+    <a href="reviews.html">Reviews</a> |
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// --- Mobile Navigation Toggle ---
+const navToggle = document.querySelector('.nav-toggle');
+const mobileNav = document.querySelector('.nav-menu-mobile');
+
+navToggle.addEventListener('click', () => {
+  mobileNav.classList.toggle('open');
+});
+</script>
+
+</body>
+</html>
